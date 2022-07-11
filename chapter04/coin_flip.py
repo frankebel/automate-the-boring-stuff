@@ -19,8 +19,8 @@ for _ in range(experiments):
     consecutive = max(aux)
     
     # Add to count.
-    if consecutive >= threshold:
+    if consecutive == threshold:
         count += 1
 
-print(f'Percentage of streak >= {threshold}: {count/experiments*100} %')
+print(f'Percentage of streak == {threshold}: {count/experiments*100:.2f} %')
 

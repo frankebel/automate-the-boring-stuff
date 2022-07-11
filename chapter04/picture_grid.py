@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import numpy as np
+
 grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
         ['O', 'O', 'O', 'O', '.', '.'],
@@ -15,3 +16,4 @@ grid = grid.T
 
 for row in grid:
     print(*row, sep='')
+
