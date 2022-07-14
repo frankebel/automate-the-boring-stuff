@@ -18,8 +18,8 @@ def isValidChessBoard(board):
             return False
     
     # Space must be from '1a' to '8h'.
-    r = re.compile("9|[i-z]")
-    if len(list(filter(r.search, board))) != 0:
+    r = re.compile("^[1-8][a-h]$")
+    if len(list(filter(r.search, board))) != len(board.values()):
         return False
 
     # Check all piece names.
